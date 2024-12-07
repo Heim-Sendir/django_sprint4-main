@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}
+  Все категории
+{% endblock %}
+{% block content %}
+  <h1 class="mb-5">Список категорий</h1>
+      <h5 class="card-title">{{ category.title }}</h5>
+      {% for category in categories %}
+        <article class="mb-5">
+          {% include 'includes/categories_link.html' %}
+        </article>
+      {% endfor %}
+{% endblock %}
