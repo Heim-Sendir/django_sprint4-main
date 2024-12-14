@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Category, Post, Location
+from .models import Category, Post, Location, Comment
 
 
 class PostInLine(admin.StackedInline):
@@ -16,3 +16,4 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Post)
 admin.site.register(Location)
+admin.site.register(Comment)
